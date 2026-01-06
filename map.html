@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fdd23fb8bc2cecf225d865a51f0eb86f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fdd23fb8bc2cecf225d865a51f0eb86f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fdd23fb8bc2cecf225d865a51f0eb86f = L.map(
+                "map_fdd23fb8bc2cecf225d865a51f0eb86f",
+                {
+                    center: [1.3188961538461539, 103.82603],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_24f05a7aee502580cf365bffb17dc050 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_24f05a7aee502580cf365bffb17dc050.addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+            var marker_7df6a460385b97fc3b0dc96bce0e8dab = L.marker(
+                [1.3764, 103.8492],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_dd7987d82c5bc7c3413abe973e232736 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d2f659591fbc8586aac67bb6495b59e = $(`<div id="html_4d2f659591fbc8586aac67bb6495b59e" style="width: 100.0%; height: 100.0%;">Ang Mo Kio Avenue 5 (ID: S109; Temperature: 31.90°C)</div>`)[0];
+                popup_dd7987d82c5bc7c3413abe973e232736.setContent(html_4d2f659591fbc8586aac67bb6495b59e);
+            
+        
+
+        marker_7df6a460385b97fc3b0dc96bce0e8dab.bindPopup(popup_dd7987d82c5bc7c3413abe973e232736)
+        ;
+
+        
+    
+    
+            var marker_24ed5c6c718e551a04e08a4233050e09 = L.marker(
+                [1.4168, 103.9673],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_76863d16d9cfc68acba2b3b8ce19f39e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a4b65994fe5983a391aea1404653de6 = $(`<div id="html_8a4b65994fe5983a391aea1404653de6" style="width: 100.0%; height: 100.0%;">Pulau Ubin (ID: S106; Temperature: 31.80°C)</div>`)[0];
+                popup_76863d16d9cfc68acba2b3b8ce19f39e.setContent(html_8a4b65994fe5983a391aea1404653de6);
+            
+        
+
+        marker_24ed5c6c718e551a04e08a4233050e09.bindPopup(popup_76863d16d9cfc68acba2b3b8ce19f39e)
+        ;
+
+        
+    
+    
+            var marker_992c3e84aad5be6958eb2d88e241ac5c = L.marker(
+                [1.256, 103.679],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_15cfc6d707d3826a1f8ddf15f4e89c5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4896b3b2957602193c0c64fe18f5603e = $(`<div id="html_4896b3b2957602193c0c64fe18f5603e" style="width: 100.0%; height: 100.0%;">Banyan Road (ID: S117; Temperature: 29.90°C)</div>`)[0];
+                popup_15cfc6d707d3826a1f8ddf15f4e89c5e.setContent(html_4896b3b2957602193c0c64fe18f5603e);
+            
+        
+
+        marker_992c3e84aad5be6958eb2d88e241ac5c.bindPopup(popup_15cfc6d707d3826a1f8ddf15f4e89c5e)
+        ;
+
+        
+    
+    
+            var marker_5981eb0988644a7240ecf6ee6b201980 = L.marker(
+                [1.3135, 103.9625],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_33a92a53909e9734415aa1edcc03010c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e74fc292fd5d751b50a1b4f7f79697aa = $(`<div id="html_e74fc292fd5d751b50a1b4f7f79697aa" style="width: 100.0%; height: 100.0%;">East Coast Parkway (ID: S107; Temperature: 30.30°C)</div>`)[0];
+                popup_33a92a53909e9734415aa1edcc03010c.setContent(html_e74fc292fd5d751b50a1b4f7f79697aa);
+            
+        
+
+        marker_5981eb0988644a7240ecf6ee6b201980.bindPopup(popup_33a92a53909e9734415aa1edcc03010c)
+        ;
+
+        
+    
+    
+            var marker_a5735f787b98f83b78287136e69aaa3f = L.marker(
+                [1.29377, 103.61843],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_003842aabdd19547fd696748cfd9d89f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45d71f38f156766b5e23adc2ed609686 = $(`<div id="html_45d71f38f156766b5e23adc2ed609686" style="width: 100.0%; height: 100.0%;">Tuas South Avenue 3 (ID: S115; Temperature: 30.80°C)</div>`)[0];
+                popup_003842aabdd19547fd696748cfd9d89f.setContent(html_45d71f38f156766b5e23adc2ed609686);
+            
+        
+
+        marker_a5735f787b98f83b78287136e69aaa3f.bindPopup(popup_003842aabdd19547fd696748cfd9d89f)
+        ;
+
+        
+    
+    
+            var marker_ffa540d089e4690c3678d7be6b75c164 = L.marker(
+                [1.189, 103.768],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_cca13425b54098bb31cde877d8e62fb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b24b2826c77445bee066ae2665fd170d = $(`<div id="html_b24b2826c77445bee066ae2665fd170d" style="width: 100.0%; height: 100.0%;">Semakau Landfill (ID: S102; Temperature: 29.80°C)</div>`)[0];
+                popup_cca13425b54098bb31cde877d8e62fb4.setContent(html_b24b2826c77445bee066ae2665fd170d);
+            
+        
+
+        marker_ffa540d089e4690c3678d7be6b75c164.bindPopup(popup_cca13425b54098bb31cde877d8e62fb4)
+        ;
+
+        
+    
+    
+            var marker_af58af8a3a4206bc479eb5495ad1e630 = L.marker(
+                [1.25, 103.8279],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_29859ecebec500908fc437d6e636b6ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09cb1ce65e3f9aff3d6d7f665d5caeae = $(`<div id="html_09cb1ce65e3f9aff3d6d7f665d5caeae" style="width: 100.0%; height: 100.0%;">Sentosa (ID: S60; Temperature: 30.10°C)</div>`)[0];
+                popup_29859ecebec500908fc437d6e636b6ef.setContent(html_09cb1ce65e3f9aff3d6d7f665d5caeae);
+            
+        
+
+        marker_af58af8a3a4206bc479eb5495ad1e630.bindPopup(popup_29859ecebec500908fc437d6e636b6ef)
+        ;
+
+        
+    
+    
+            var marker_f454d51f4c791bc977efbf9dd871e9db = L.marker(
+                [1.3337, 103.7768],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_00f0d0899cd4b2bb1edf6fd099df0267 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03b1450e6084e34f575d7616badb1ebd = $(`<div id="html_03b1450e6084e34f575d7616badb1ebd" style="width: 100.0%; height: 100.0%;">Clementi Road (ID: S50; Temperature: 30.70°C)</div>`)[0];
+                popup_00f0d0899cd4b2bb1edf6fd099df0267.setContent(html_03b1450e6084e34f575d7616badb1ebd);
+            
+        
+
+        marker_f454d51f4c791bc977efbf9dd871e9db.bindPopup(popup_00f0d0899cd4b2bb1edf6fd099df0267)
+        ;
+
+        
+    
+    
+            var marker_aaa1fba85bd7d31814b84ff08231cf36 = L.marker(
+                [1.34583, 103.68166],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_efd8d44c12b3de82abc5490deaf16f58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6e6bb4b9d5ee56df74effd8e4c22baf = $(`<div id="html_e6e6bb4b9d5ee56df74effd8e4c22baf" style="width: 100.0%; height: 100.0%;">Nanyang Avenue (ID: S44; Temperature: 31.00°C)</div>`)[0];
+                popup_efd8d44c12b3de82abc5490deaf16f58.setContent(html_e6e6bb4b9d5ee56df74effd8e4c22baf);
+            
+        
+
+        marker_aaa1fba85bd7d31814b84ff08231cf36.bindPopup(popup_efd8d44c12b3de82abc5490deaf16f58)
+        ;
+
+        
+    
+    
+            var marker_2e8dccd58308f55d2863f9350f18a98d = L.marker(
+                [1.3399, 103.8878],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_e791ad4512b918ae12ebb74a754351c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9d83c9b70a45ed0e49fca10f282afc = $(`<div id="html_ea9d83c9b70a45ed0e49fca10f282afc" style="width: 100.0%; height: 100.0%;">Kim Chuan Road (ID: S43; Temperature: 31.50°C)</div>`)[0];
+                popup_e791ad4512b918ae12ebb74a754351c6.setContent(html_ea9d83c9b70a45ed0e49fca10f282afc);
+            
+        
+
+        marker_2e8dccd58308f55d2863f9350f18a98d.bindPopup(popup_e791ad4512b918ae12ebb74a754351c6)
+        ;
+
+        
+    
+    
+            var marker_83ab5c5bc64482e9ec032f59e8cab874 = L.marker(
+                [1.3678, 103.9826],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_7e218c3f38bf870cdc2390cccf7b5d3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14f2cd4e64382728b46e4b4324c947bf = $(`<div id="html_14f2cd4e64382728b46e4b4324c947bf" style="width: 100.0%; height: 100.0%;">Upper Changi Road North (ID: S24; Temperature: 30.80°C)</div>`)[0];
+                popup_7e218c3f38bf870cdc2390cccf7b5d3b.setContent(html_14f2cd4e64382728b46e4b4324c947bf);
+            
+        
+
+        marker_83ab5c5bc64482e9ec032f59e8cab874.bindPopup(popup_7e218c3f38bf870cdc2390cccf7b5d3b)
+        ;
+
+        
+    
+    
+            var marker_c36243d9e3336324b29058763ff2f1bc = L.marker(
+                [1.3524, 103.9007],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_7e2770e70755f24cbab44f516db71ff5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb0b74075f1d12ed8643811dfcbe7ae9 = $(`<div id="html_cb0b74075f1d12ed8643811dfcbe7ae9" style="width: 100.0%; height: 100.0%;">Paya Lebar (ID: S06; Temperature: 32.00°C)</div>`)[0];
+                popup_7e2770e70755f24cbab44f516db71ff5.setContent(html_cb0b74075f1d12ed8643811dfcbe7ae9);
+            
+        
+
+        marker_c36243d9e3336324b29058763ff2f1bc.bindPopup(popup_7e2770e70755f24cbab44f516db71ff5)
+        ;
+
+        
+    
+    
+            var marker_8d18de96c1c57c95aab177f2d4ae2786 = L.marker(
+                [1.31055, 103.8365],
+                {
+}
+            ).addTo(map_fdd23fb8bc2cecf225d865a51f0eb86f);
+        
+    
+        var popup_f16d90a8bfade9698a970cb80c74a8ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a74cb68d12a498581084bd9f009aa6b2 = $(`<div id="html_a74cb68d12a498581084bd9f009aa6b2" style="width: 100.0%; height: 100.0%;">Scotts Road (ID: S111; Temperature: 30.10°C)</div>`)[0];
+                popup_f16d90a8bfade9698a970cb80c74a8ce.setContent(html_a74cb68d12a498581084bd9f009aa6b2);
+            
+        
+
+        marker_8d18de96c1c57c95aab177f2d4ae2786.bindPopup(popup_f16d90a8bfade9698a970cb80c74a8ce)
+        ;
+
+        
+    
+</script>
+</html>
