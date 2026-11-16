@@ -205,3 +205,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Weather engine archives, credentials, and local experiment artifacts
+/data/weather_engine/
+/data/smoke/
+/data/demo/
+.ecmwfapirc
